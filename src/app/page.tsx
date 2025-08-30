@@ -23,8 +23,10 @@ export default function Home() {
             alt="Cursor clicker image"
             width={400}
             height={400}
-            className="cursor-pointer hover:scale-105 transition-transform duration-200"
+            className="cursor-pointer hover:scale-105 transition-transform duration-200 select-none"
             onClick={handleClick}
+            draggable={false}
+            style={{ userSelect: 'none' }}
           />
         </div>
         
